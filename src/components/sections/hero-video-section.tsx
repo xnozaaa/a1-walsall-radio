@@ -1,106 +1,90 @@
 'use client';
 
-import { ArrowRight } from 'lucide-react';
-
-const services = [
-  "The Service",
-  "The Car Service",
-  "The Courier Service",
-  "The Business Service",
-  "The Events Service",
-  "The App Experience",
-  "The Premium Car",
-  "The Airport Transfer",
-  "The London Taxi",
-];
-
-const TickerAnimation = () => {
-  const animationDuration = services.length * 2.5; // Adjust speed here
-  const itemHeight = 80; // Corresponds to md:h-[80px]
-  const yTranslate = services.length * itemHeight;
-
-  return (
-    <style>
-      {`
-        @keyframes ticker-scroll {
-          0% { transform: translateY(0); }
-          100% { transform: translateY(-${yTranslate}px); }
-        }
-        .animate-ticker-scroll {
-          animation: ticker-scroll ${animationDuration}s linear infinite;
-        }
-      `}
-    </style>
-  );
-};
-
-const TextTicker = () => {
-  return (
-    <div className="relative h-[80px] overflow-hidden">
-      <div className="animate-ticker-scroll absolute top-0 left-0">
-        {[...services, ...services].map((service, index) => (
-          <div
-            key={index}
-            className="flex h-[80px] items-center text-white"
-          >
-            {service}
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-};
+import { Phone, Mail } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 const HeroVideoSection = () => {
   return (
-    <>
-      <TickerAnimation />
-      <section className="relative h-screen w-full bg-black">
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute inset-0 h-full w-full object-cover"
-        >
-          <source
-            src="https://www.addisonlee.com/wp-content/uploads/2025/03/AL2025_030_Homepage_Video_CAR_B2B_DRAFT1-1.mp4"
-            type="video/mp4"
-          />
-        </video>
-        <div
-          className="absolute inset-0 flex h-full items-end px-4 pb-36 md:items-center md:px-0 md:py-24"
-          style={{
-            backgroundImage:
-              "linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 60%)",
-          }}
-        >
-          <div className="container mx-auto w-full">
-            <div className="mb-4 font-medium uppercase leading-none tracking-tight text-[40px] md:text-[72px]">
-              <div className="hidden md:block">
-                <TextTicker />
-              </div>
-              <p className="block text-white md:hidden">The Business Service</p>
-              <p className="block text-primary md:ml-40">You Deserve</p>
+    <section className="relative min-h-[600px] md:min-h-[700px] flex items-center justify-center bg-charcoal overflow-hidden">
+      {/* Background Image with Overlay */}
+      <div className="absolute inset-0 z-0">
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/80 z-10" />
+        <img
+          src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/321dc789-f6df-4a18-a342-76c745235fcf-addisonlee-com/assets/images/1920x1080_15-Addison-Lee-multivan-in-London-11.jpg"
+          alt="A1 Walsall Radio Taxis"
+          className="w-full h-full object-cover"
+        />
+      </div>
+
+      {/* Hero Content */}
+      <div className="container mx-auto px-4 relative z-20 text-center">
+        <div className="max-w-4xl mx-auto">
+          {/* Badge */}
+          <div className="inline-flex items-center gap-2 bg-primary/20 border border-primary/50 rounded-full px-4 py-2 mb-6">
+            <span className="text-primary font-semibold text-sm">40+ YEARS OF TRUSTED SERVICE</span>
+          </div>
+
+          {/* Main Headline */}
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+            <span className="text-white">RELIABLE TRANSPORT FOR</span>
+            <br />
+            <span className="text-primary">SCHOOLS, BUSINESSES & LOCAL FAMILIES</span>
+            <br />
+            <span className="text-white">SINCE 1988</span>
+          </h1>
+
+          {/* Subheading */}
+          <p className="text-lg md:text-xl text-white/90 mb-4 max-w-3xl mx-auto leading-relaxed">
+            Whether you need daily home-to-school transport, wheelchair-accessible travel, corporate staff transport, or airport transfers, A1 Walsall Radio Taxis Ltd delivers safe, punctual and professional journeys every time.
+          </p>
+
+          {/* Key Features */}
+          <div className="flex flex-wrap justify-center gap-4 mb-8 text-sm md:text-base">
+            <div className="flex items-center gap-2 text-white">
+              <div className="w-2 h-2 bg-primary rounded-full" />
+              <span>Wheelchair Accessible</span>
             </div>
-            <div className="md:pl-40">
-              <p className="max-w-xl text-xl text-white !leading-tight">
-                Book your car, courier, or London black taxi with Addison Lee,
-                the trusted choice for airport transfers, city travel, and
-                courier services across London.
-              </p>
-              <a
-                href="https://book.addisonlee.com/al/booking/new/car"
-                className="mt-8 inline-flex items-center justify-center gap-2 bg-primary px-8 py-4 text-sm font-medium uppercase tracking-[1.4px] text-primary-foreground transition-opacity hover:opacity-60 md:mt-12"
-              >
-                Get a quote
-                <ArrowRight className="h-3 w-4" />
-              </a>
+            <div className="flex items-center gap-2 text-white">
+              <div className="w-2 h-2 bg-primary rounded-full" />
+              <span>Home-to-School Transport</span>
+            </div>
+            <div className="flex items-center gap-2 text-white">
+              <div className="w-2 h-2 bg-primary rounded-full" />
+              <span>Corporate Contracts</span>
+            </div>
+            <div className="flex items-center gap-2 text-white">
+              <div className="w-2 h-2 bg-primary rounded-full" />
+              <span>Airport Transfers</span>
             </div>
           </div>
+
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Button
+              size="lg"
+              className="bg-primary hover:bg-[#D68A1F] text-white font-semibold text-base px-8 py-6 min-w-[200px]"
+              asChild
+            >
+              <a href="tel:01922123456" className="flex items-center gap-2">
+                <Phone className="h-5 w-5" />
+                CALL US NOW
+              </a>
+            </Button>
+            <Button
+              size="lg"
+              variant="outline"
+              className="border-2 border-white text-white hover:bg-white hover:text-charcoal font-semibold text-base px-8 py-6 min-w-[200px]"
+              asChild
+            >
+              <a href="mailto:info@a1walsall.co.uk" className="flex items-center gap-2">
+                <Mail className="h-5 w-5" />
+                EMAIL US
+              </a>
+            </Button>
+          </div>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 };
 
