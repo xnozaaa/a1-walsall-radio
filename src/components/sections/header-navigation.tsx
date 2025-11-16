@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { Menu, X, Phone, Mail } from 'lucide-react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 
 const HeaderNavigation = () => {
@@ -19,10 +20,14 @@ const HeaderNavigation = () => {
           <div className="flex items-center justify-between h-16 md:h-[108px]">
             {/* Logo */}
             <Link href="/" className="flex items-center">
-              <div className="text-2xl md:text-3xl font-bold">
-                <span className="text-primary">A1</span>
-                <span className="text-white"> WALSALL</span>
-              </div>
+              <Image
+                src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/321dc789-f6df-4a18-a342-76c745235fcf/generated_images/professional-logo-for-a1-walsall-radio-t-9a501cfb-20251116133719.jpg"
+                alt="A1 Walsall Radio Taxis"
+                width={180}
+                height={60}
+                className="h-12 md:h-16 w-auto"
+                priority
+              />
             </Link>
 
             {/* Desktop Navigation */}
