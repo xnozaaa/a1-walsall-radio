@@ -30,7 +30,7 @@ const HeroVideoSection = () => {
             <br />
             <span className="text-primary">SCHOOLS, BUSINESSES & LOCAL FAMILIES</span>
             <br />
-            <span className="text-white">SINCE 1988</span>
+            <span className="text-white">SINCE 1986</span>
           </h1>
 
           {/* Subheading */}
