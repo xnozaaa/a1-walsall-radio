@@ -7,86 +7,72 @@ const airportPrices = [
   {
     airport: 'Birmingham Airport',
     distance: '12 miles',
-    estimatedPrice: '£25-35',
-    duration: '25 mins'
+    estimatedPrice: '£25-35'
   },
   {
     airport: 'East Midlands Airport',
     distance: '35 miles',
-    estimatedPrice: '£55-70',
-    duration: '45 mins'
+    estimatedPrice: '£55-70'
   },
   {
     airport: 'Manchester Airport',
     distance: '55 miles',
-    estimatedPrice: '£85-100',
-    duration: '1 hour'
+    estimatedPrice: '£85-100'
   },
   {
     airport: 'Liverpool John Lennon Airport',
     distance: '85 miles',
-    estimatedPrice: '£110-130',
-    duration: '1.5 hours'
+    estimatedPrice: '£110-130'
   },
   {
     airport: 'Leeds Bradford Airport',
     distance: '95 miles',
-    estimatedPrice: '£120-140',
-    duration: '1.5 hours'
+    estimatedPrice: '£120-140'
   },
   {
     airport: 'Bristol Airport',
     distance: '110 miles',
-    estimatedPrice: '£140-170',
-    duration: '2 hours'
+    estimatedPrice: '£140-170'
   },
   {
     airport: 'Heathrow Airport',
     distance: '120 miles',
-    estimatedPrice: '£150-180',
-    duration: '2 hours'
+    estimatedPrice: '£150-180'
   },
   {
     airport: 'Luton Airport',
     distance: '110 miles',
-    estimatedPrice: '£140-165',
-    duration: '1.75 hours'
+    estimatedPrice: '£140-165'
   },
   {
     airport: 'Stansted Airport',
     distance: '130 miles',
-    estimatedPrice: '£160-190',
-    duration: '2 hours'
+    estimatedPrice: '£160-190'
   },
   {
     airport: 'Gatwick Airport',
     distance: '145 miles',
-    estimatedPrice: '£180-220',
-    duration: '2.5 hours'
+    estimatedPrice: '£180-220'
   },
   {
     airport: 'London City Airport',
     distance: '135 miles',
-    estimatedPrice: '£165-200',
-    duration: '2.25 hours'
+    estimatedPrice: '£165-200'
   },
   {
     airport: 'Newcastle Airport',
     distance: '180 miles',
-    estimatedPrice: '£220-260',
-    duration: '3 hours'
+    estimatedPrice: '£220-260'
   },
   {
     airport: 'Southampton Airport',
     distance: '155 miles',
-    estimatedPrice: '£190-230',
-    duration: '2.5 hours'
+    estimatedPrice: '£190-230'
   },
   {
     airport: 'Doncaster Sheffield Airport',
     distance: '65 miles',
-    estimatedPrice: '£95-115',
-    duration: '1 hour'
+    estimatedPrice: '£95-115'
   }
 ];
 
@@ -124,12 +110,8 @@ export const AirportPricingSection = () => {
               
               <div className="space-y-3">
                 <div className="flex justify-between items-center">
-                  <span className="text-sm text-[#DDDDDD]">Distance from Walsall:</span>
+                  <span className="text-sm text-[#DDDDDD]">Travel Distance:</span>
                   <span className="text-sm font-semibold text-white">{airport.distance}</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-[#DDDDDD]">Estimated Duration:</span>
-                  <span className="text-sm font-semibold text-white">{airport.duration}</span>
                 </div>
                 <div className="pt-3 border-t border-[#DDDDDD]/20">
                   <div className="flex justify-between items-center">
