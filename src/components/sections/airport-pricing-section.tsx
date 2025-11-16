@@ -6,47 +6,47 @@ import { Button } from '@/components/ui/button';
 const airportPrices = [
   {
     airport: 'Birmingham Airport',
-    distance: '12 miles',
+    distance: '16 miles',
     estimatedPrice: '£25-35'
   },
   {
     airport: 'East Midlands Airport',
-    distance: '35 miles',
+    distance: '48 miles',
     estimatedPrice: '£55-70'
   },
   {
     airport: 'Manchester Airport',
-    distance: '55 miles',
+    distance: '68 miles',
     estimatedPrice: '£85-100'
   },
   {
     airport: 'Liverpool John Lennon Airport',
-    distance: '85 miles',
+    distance: '98 miles',
     estimatedPrice: '£110-130'
   },
   {
     airport: 'Leeds Bradford Airport',
-    distance: '95 miles',
+    distance: '105 miles',
     estimatedPrice: '£120-140'
   },
   {
     airport: 'Bristol Airport',
-    distance: '110 miles',
+    distance: '125 miles',
     estimatedPrice: '£140-170'
   },
   {
     airport: 'Heathrow Airport',
-    distance: '120 miles',
+    distance: '125 miles',
     estimatedPrice: '£150-180'
   },
   {
     airport: 'Luton Airport',
-    distance: '110 miles',
+    distance: '105 miles',
     estimatedPrice: '£140-165'
   },
   {
     airport: 'Stansted Airport',
-    distance: '130 miles',
+    distance: '125 miles',
     estimatedPrice: '£160-190'
   },
   {
@@ -61,17 +61,17 @@ const airportPrices = [
   },
   {
     airport: 'Newcastle Airport',
-    distance: '180 miles',
+    distance: '205 miles',
     estimatedPrice: '£220-260'
   },
   {
     airport: 'Southampton Airport',
-    distance: '155 miles',
+    distance: '165 miles',
     estimatedPrice: '£190-230'
   },
   {
     airport: 'Doncaster Sheffield Airport',
-    distance: '65 miles',
+    distance: '72 miles',
     estimatedPrice: '£95-115'
   }
 ];
@@ -110,7 +110,7 @@ export const AirportPricingSection = () => {
               
               <div className="space-y-3">
                 <div className="flex justify-between items-center">
-                  <span className="text-sm text-[#DDDDDD]">Travel Distance:</span>
+                  <span className="text-sm text-[#DDDDDD]">Distance from Walsall:</span>
                   <span className="text-sm font-semibold text-white">{airport.distance}</span>
                 </div>
                 <div className="pt-3 border-t border-[#DDDDDD]/20">
