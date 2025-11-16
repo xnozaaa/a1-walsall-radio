@@ -1,67 +1,79 @@
 'use client';
 
-import { Plane, ArrowRight } from 'lucide-react';
+import { Plane, ArrowRight, Clock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const airportPrices = [
   {
     airport: 'Birmingham Airport',
     distance: '21 miles',
+    estimatedDuration: '24 mins',
     estimatedPrice: '£67'
   },
   {
     airport: 'East Midlands Airport',
     distance: '49 miles',
+    estimatedDuration: '48 mins',
     estimatedPrice: '£119'
   },
   {
     airport: 'Manchester Airport',
     distance: '69 miles',
+    estimatedDuration: '72 mins',
     estimatedPrice: '£170'
   },
   {
     airport: 'Liverpool John Lennon Airport',
     distance: '84 miles',
+    estimatedDuration: '87 mins',
     estimatedPrice: '£204'
   },
   {
     airport: 'Luton Airport',
     distance: '96 miles',
+    estimatedDuration: '97 mins',
     estimatedPrice: '£233'
   },
   {
     airport: 'Bristol Airport',
     distance: '93 miles',
+    estimatedDuration: '92 mins',
     estimatedPrice: '£225'
   },
   {
     airport: 'Leeds Bradford Airport',
     distance: '119 miles',
+    estimatedDuration: '131 mins',
     estimatedPrice: '£285'
   },
   {
     airport: 'Heathrow Airport',
     distance: '121 miles',
+    estimatedDuration: '120 mins',
     estimatedPrice: '£291'
   },
   {
     airport: 'Stansted Airport',
     distance: '132 miles',
+    estimatedDuration: '131 mins',
     estimatedPrice: '£313'
   },
   {
     airport: 'London City Airport',
     distance: '142 miles',
+    estimatedDuration: '145 mins',
     estimatedPrice: '£339'
   },
   {
     airport: 'Southampton Airport',
     distance: '147 miles',
+    estimatedDuration: '153 mins',
     estimatedPrice: '£349'
   },
   {
     airport: 'Gatwick Airport',
     distance: '161 miles',
+    estimatedDuration: '159 mins',
     estimatedPrice: '£381'
   }
 ];
@@ -102,6 +114,13 @@ export const AirportPricingSection = () => {
                 <div className="flex justify-between items-center">
                   <span className="text-sm text-[#DDDDDD]">Distance from Walsall:</span>
                   <span className="text-sm font-semibold text-white">{airport.distance}</span>
+                </div>
+                <div className="flex justify-between items-center">
+                  <span className="text-sm text-[#DDDDDD] flex items-center gap-1">
+                    <Clock className="h-3.5 w-3.5" />
+                    Duration:
+                  </span>
+                  <span className="text-sm font-semibold text-white">{airport.estimatedDuration}</span>
                 </div>
                 <div className="pt-3 border-t border-[#DDDDDD]/20">
                   <div className="flex justify-between items-center">
