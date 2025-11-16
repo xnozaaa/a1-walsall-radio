@@ -1,6 +1,6 @@
 'use client';
 
-import { School, Wheelchair, Plane, Building2, Tablet, Car, Users } from 'lucide-react';
+import { School, Accessibility, Plane, Building2, Tablet, Car, Users } from 'lucide-react';
 import Link from 'next/link';
 
 const services = [
@@ -29,7 +29,7 @@ const services = [
     color: 'text-primary'
   },
   {
-    icon: Wheelchair,
+    icon: Accessibility,
     title: 'Wheelchair-Accessible Transport',
     description: 'Vehicles equipped with ramps/lifts and secure wheelchair anchoring. Drivers trained for mobility support.',
     color: 'text-primary'
