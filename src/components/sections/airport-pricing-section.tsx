@@ -6,42 +6,42 @@ import { Button } from '@/components/ui/button';
 const airportPrices = [
   {
     airport: 'Birmingham Airport',
-    distance: '16 miles',
+    distance: '17 miles',
     estimatedPrice: '£25-35'
   },
   {
     airport: 'East Midlands Airport',
-    distance: '48 miles',
+    distance: '40 miles',
     estimatedPrice: '£55-70'
   },
   {
     airport: 'Manchester Airport',
-    distance: '68 miles',
+    distance: '70 miles',
     estimatedPrice: '£85-100'
   },
   {
     airport: 'Liverpool John Lennon Airport',
-    distance: '98 miles',
+    distance: '80 miles',
     estimatedPrice: '£110-130'
   },
   {
     airport: 'Leeds Bradford Airport',
-    distance: '105 miles',
+    distance: '116 miles',
     estimatedPrice: '£120-140'
   },
   {
     airport: 'Bristol Airport',
-    distance: '125 miles',
+    distance: '102 miles',
     estimatedPrice: '£140-170'
   },
   {
     airport: 'Heathrow Airport',
-    distance: '125 miles',
+    distance: '117 miles',
     estimatedPrice: '£150-180'
   },
   {
     airport: 'Luton Airport',
-    distance: '105 miles',
+    distance: '94 miles',
     estimatedPrice: '£140-165'
   },
   {
@@ -51,27 +51,27 @@ const airportPrices = [
   },
   {
     airport: 'Gatwick Airport',
-    distance: '145 miles',
+    distance: '149 miles',
     estimatedPrice: '£180-220'
   },
   {
     airport: 'London City Airport',
-    distance: '135 miles',
+    distance: '131 miles',
     estimatedPrice: '£165-200'
   },
   {
     airport: 'Newcastle Airport',
-    distance: '205 miles',
+    distance: '195 miles',
     estimatedPrice: '£220-260'
   },
   {
     airport: 'Southampton Airport',
-    distance: '165 miles',
+    distance: '141 miles',
     estimatedPrice: '£190-230'
   },
   {
     airport: 'Doncaster Sheffield Airport',
-    distance: '72 miles',
+    distance: '86 miles',
     estimatedPrice: '£95-115'
   }
 ];
