@@ -1,6 +1,6 @@
 'use client';
 
-import { School, Wheelchair, Plane, Building2, Tablet, Car, MapPin } from 'lucide-react';
+import { School, Wheelchair, Plane, Building2, Tablet, Car, Users } from 'lucide-react';
 import Link from 'next/link';
 
 const services = [
@@ -17,7 +17,7 @@ const services = [
     color: 'text-primary'
   },
   {
-    icon: Building2,
+    icon: Users,
     title: 'Corporate Travel & Workplace Transport',
     description: 'Daily staff shuttles and on-demand journeys for businesses, warehouses, hospitals and industrial parks.',
     color: 'text-primary'
@@ -51,7 +51,7 @@ const services = [
 const A1ServicesSection = () => {
   return (
     <section className="py-16 md:py-24 bg-white">
-      <div className="container mx-auto">
+      <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
@@ -142,4 +142,4 @@ const A1ServicesSection = () => {
   );
 };
 
-export const A1ServicesSection = A1ServicesSection;
+export default A1ServicesSection;
