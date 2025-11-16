@@ -23,9 +23,39 @@ const airportPrices = [
     duration: '1 hour'
   },
   {
+    airport: 'Liverpool John Lennon Airport',
+    distance: '85 miles',
+    estimatedPrice: '£110-130',
+    duration: '1.5 hours'
+  },
+  {
+    airport: 'Leeds Bradford Airport',
+    distance: '95 miles',
+    estimatedPrice: '£120-140',
+    duration: '1.5 hours'
+  },
+  {
+    airport: 'Bristol Airport',
+    distance: '110 miles',
+    estimatedPrice: '£140-170',
+    duration: '2 hours'
+  },
+  {
     airport: 'Heathrow Airport',
     distance: '120 miles',
     estimatedPrice: '£150-180',
+    duration: '2 hours'
+  },
+  {
+    airport: 'Luton Airport',
+    distance: '110 miles',
+    estimatedPrice: '£140-165',
+    duration: '1.75 hours'
+  },
+  {
+    airport: 'Stansted Airport',
+    distance: '130 miles',
+    estimatedPrice: '£160-190',
     duration: '2 hours'
   },
   {
@@ -35,10 +65,28 @@ const airportPrices = [
     duration: '2.5 hours'
   },
   {
-    airport: 'Stansted Airport',
-    distance: '130 miles',
-    estimatedPrice: '£160-190',
-    duration: '2 hours'
+    airport: 'London City Airport',
+    distance: '135 miles',
+    estimatedPrice: '£165-200',
+    duration: '2.25 hours'
+  },
+  {
+    airport: 'Newcastle Airport',
+    distance: '180 miles',
+    estimatedPrice: '£220-260',
+    duration: '3 hours'
+  },
+  {
+    airport: 'Southampton Airport',
+    distance: '155 miles',
+    estimatedPrice: '£190-230',
+    duration: '2.5 hours'
+  },
+  {
+    airport: 'Doncaster Sheffield Airport',
+    distance: '65 miles',
+    estimatedPrice: '£95-115',
+    duration: '1 hour'
   }
 ];
 
@@ -55,20 +103,20 @@ export const AirportPricingSection = () => {
             Airport Transfer <span className="text-primary">Estimated Prices</span>
           </h2>
           <p className="text-lg text-[#DDDDDD]">
-            Fixed, transparent pricing for all major UK airports. No hidden charges. 
+            Fixed, transparent pricing to all major English airports. No hidden charges. 
             100% on-time guarantee.
           </p>
         </div>
 
         {/* Pricing Grid */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 mb-12">
           {airportPrices.map((airport, index) => (
             <div
               key={index}
               className="bg-white/5 backdrop-blur-sm border-2 border-[#DDDDDD]/20 rounded-xl p-6 hover:border-primary hover:bg-white/10 transition-all duration-300 group"
             >
               <div className="flex items-start justify-between mb-4">
-                <h3 className="text-xl font-bold text-white group-hover:text-primary transition-colors">
+                <h3 className="text-lg font-bold text-white group-hover:text-primary transition-colors">
                   {airport.airport}
                 </h3>
                 <Plane className="h-5 w-5 text-primary opacity-60 group-hover:opacity-100 transition-opacity" />
@@ -119,6 +167,10 @@ export const AirportPricingSection = () => {
             <li className="flex items-start gap-3">
               <span className="text-primary mt-1">•</span>
               <span>Flight monitoring included - we track your flight for delays</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-primary mt-1">•</span>
+              <span>All vehicles regularly serviced and fully insured</span>
             </li>
           </ul>
         </div>
