@@ -21,20 +21,26 @@ export const A1Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#1A1A1A] border-b border-[#DDDDDD]/20">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20 md:h-24">
-          {/* Logo with Est 1986 */}
-          <Link href="/" className="flex-shrink-0 flex items-center gap-3">
+          {/* Logo */}
+          <Link href="/" className="flex-shrink-0">
+            {/* Desktop/Tablet: Horizontal Logo */}
             <Image
-              src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/2025-10-26-1763300434992.webp"
-              alt="A1 Walsall Radio Taxis Ltd"
-              width={160}
-              height={64}
-              className="h-12 md:h-16 w-auto"
+              src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Artboard-2-1763336832861.png"
+              alt="A1 Walsall Radio Taxis Ltd - Est. 1986"
+              width={280}
+              height={80}
+              className="hidden sm:block h-14 md:h-16 w-auto"
               priority
             />
-            <div className="hidden sm:flex flex-col items-center justify-center border-l-2 border-[#F2A93B] pl-3">
-              <span className="text-[#F2A93B] text-xs font-semibold tracking-wider uppercase">Est.</span>
-              <span className="text-white text-2xl md:text-3xl font-bold leading-none">1986</span>
-            </div>
+            {/* Mobile: Vertical Logo */}
+            <Image
+              src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Artboard-1-1763336832866.png"
+              alt="A1 Walsall Radio Taxis Ltd - Est. 1986"
+              width={120}
+              height={140}
+              className="block sm:hidden h-16 w-auto"
+              priority
+            />
           </Link>
 
           {/* Desktop Navigation */}
