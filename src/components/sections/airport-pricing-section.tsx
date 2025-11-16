@@ -63,11 +63,6 @@ const airportPrices = [
     airport: 'Gatwick Airport',
     distance: '161 miles',
     estimatedPrice: '£381'
-  },
-  {
-    airport: 'Newcastle Airport',
-    distance: '203 miles',
-    estimatedPrice: '£478'
   }
 ];
 
