@@ -1,4 +1,3 @@
-
 'use client';
 
 import { useState } from 'react';
@@ -22,16 +21,20 @@ export const A1Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#1A1A1A] border-b border-[#DDDDDD]/20">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20 md:h-24">
-          {/* Logo */}
-          <Link href="/" className="flex-shrink-0">
+          {/* Logo with Est 1986 */}
+          <Link href="/" className="flex-shrink-0 flex items-center gap-3">
             <Image
               src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/2025-10-26-1763300434992.webp"
               alt="A1 Walsall Radio Taxis Ltd"
-              width={200}
-              height={80}
-              className="h-16 md:h-20 w-auto"
+              width={160}
+              height={64}
+              className="h-12 md:h-16 w-auto"
               priority
             />
+            <div className="hidden sm:flex flex-col items-center justify-center border-l-2 border-[#F2A93B] pl-3">
+              <span className="text-[#F2A93B] text-xs font-semibold tracking-wider uppercase">Est.</span>
+              <span className="text-white text-2xl md:text-3xl font-bold leading-none">1986</span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
