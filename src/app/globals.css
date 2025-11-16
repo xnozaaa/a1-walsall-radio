@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;500;600&display=swap');
 
 @import "tailwindcss";
 @import "tw-animate-css";
@@ -65,7 +65,7 @@
     }
   }
 
-  /* Custom Design Tokens */
+  /* A1 Walsall Custom Color Tokens */
   --color-a1-gold: #F2A93B;
   --color-warm-amber: #FFCC66;
   --color-golden-deep: #D68A1F;
