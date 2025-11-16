@@ -25,19 +25,9 @@ const airportPrices = [
     estimatedPrice: '£110-130'
   },
   {
-    airport: 'Leeds Bradford Airport',
-    distance: '116 miles',
-    estimatedPrice: '£120-140'
-  },
-  {
-    airport: 'Bristol Airport',
-    distance: '102 miles',
-    estimatedPrice: '£140-170'
-  },
-  {
-    airport: 'Heathrow Airport',
-    distance: '117 miles',
-    estimatedPrice: '£150-180'
+    airport: 'Doncaster Sheffield Airport',
+    distance: '86 miles',
+    estimatedPrice: '£95-115'
   },
   {
     airport: 'Luton Airport',
@@ -45,14 +35,24 @@ const airportPrices = [
     estimatedPrice: '£140-165'
   },
   {
+    airport: 'Bristol Airport',
+    distance: '102 miles',
+    estimatedPrice: '£140-170'
+  },
+  {
+    airport: 'Leeds Bradford Airport',
+    distance: '116 miles',
+    estimatedPrice: '£120-140'
+  },
+  {
+    airport: 'Heathrow Airport',
+    distance: '117 miles',
+    estimatedPrice: '£150-180'
+  },
+  {
     airport: 'Stansted Airport',
     distance: '125 miles',
     estimatedPrice: '£160-190'
-  },
-  {
-    airport: 'Gatwick Airport',
-    distance: '149 miles',
-    estimatedPrice: '£180-220'
   },
   {
     airport: 'London City Airport',
@@ -60,19 +60,19 @@ const airportPrices = [
     estimatedPrice: '£165-200'
   },
   {
-    airport: 'Newcastle Airport',
-    distance: '195 miles',
-    estimatedPrice: '£220-260'
-  },
-  {
     airport: 'Southampton Airport',
     distance: '141 miles',
     estimatedPrice: '£190-230'
   },
   {
-    airport: 'Doncaster Sheffield Airport',
-    distance: '86 miles',
-    estimatedPrice: '£95-115'
+    airport: 'Gatwick Airport',
+    distance: '149 miles',
+    estimatedPrice: '£180-220'
+  },
+  {
+    airport: 'Newcastle Airport',
+    distance: '195 miles',
+    estimatedPrice: '£220-260'
   }
 ];
 
