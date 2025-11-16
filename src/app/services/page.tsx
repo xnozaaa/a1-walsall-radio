@@ -1,6 +1,6 @@
 import HeaderNavigation from '@/components/sections/header-navigation';
 import A1Footer from '@/components/sections/a1-footer';
-import { School, Building2, Users, Tablet, Wheelchair, Plane, Car, Phone, Mail } from 'lucide-react';
+import { School, Building2, Users, Tablet, Accessibility, Plane, Car, Phone, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
@@ -58,7 +58,7 @@ const services = [
     ]
   },
   {
-    icon: Wheelchair,
+    icon: Accessibility,
     title: 'Wheelchair-Accessible Transport',
     description: 'Vehicles equipped with ramps/lifts and secure wheelchair anchoring. Drivers trained for mobility support.',
     benefits: [
