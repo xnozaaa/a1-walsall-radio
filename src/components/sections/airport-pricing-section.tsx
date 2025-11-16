@@ -6,73 +6,68 @@ import { Button } from '@/components/ui/button';
 const airportPrices = [
   {
     airport: 'Birmingham Airport',
-    distance: '17 miles',
-    estimatedPrice: '£25-35'
+    distance: '21 miles',
+    estimatedPrice: '£67'
   },
   {
     airport: 'East Midlands Airport',
-    distance: '40 miles',
-    estimatedPrice: '£55-70'
+    distance: '49 miles',
+    estimatedPrice: '£119'
   },
   {
     airport: 'Manchester Airport',
-    distance: '70 miles',
-    estimatedPrice: '£85-100'
+    distance: '69 miles',
+    estimatedPrice: '£170'
   },
   {
     airport: 'Liverpool John Lennon Airport',
-    distance: '80 miles',
-    estimatedPrice: '£110-130'
-  },
-  {
-    airport: 'Doncaster Sheffield Airport',
-    distance: '86 miles',
-    estimatedPrice: '£95-115'
+    distance: '84 miles',
+    estimatedPrice: '£204'
   },
   {
     airport: 'Luton Airport',
-    distance: '94 miles',
-    estimatedPrice: '£140-165'
+    distance: '96 miles',
+    estimatedPrice: '£233'
   },
   {
     airport: 'Bristol Airport',
-    distance: '102 miles',
-    estimatedPrice: '£140-170'
+    distance: '93 miles',
+    estimatedPrice: '£225'
   },
   {
     airport: 'Leeds Bradford Airport',
-    distance: '116 miles',
-    estimatedPrice: '£120-140'
+    distance: '119 miles',
+    estimatedPrice: '£285'
   },
   {
     airport: 'Heathrow Airport',
-    distance: '117 miles',
-    estimatedPrice: '£150-180'
+    distance: '121 miles',
+    estimatedPrice: '£291'
   },
   {
     airport: 'Stansted Airport',
-    distance: '125 miles',
-    estimatedPrice: '£160-190'
+    distance: '132 miles',
+    estimatedPrice: '£313'
   },
   {
     airport: 'London City Airport',
-    distance: '131 miles',
-    estimatedPrice: '£165-200'
+    distance: '142 miles',
+    estimatedPrice: '£339'
   },
   {
     airport: 'Southampton Airport',
-    distance: '141 miles',
-    estimatedPrice: '£190-230'
+    distance: '147 miles',
+    estimatedPrice: '£349'
   },
   {
     airport: 'Gatwick Airport',
-    distance: '149 miles',
-    estimatedPrice: '£180-220'
+    distance: '161 miles',
+    estimatedPrice: '£381'
   },
   {
     airport: 'Newcastle Airport',
-    distance: '195 miles',
-    estimatedPrice: '£220-260'
+    distance: '203 miles',
+    estimatedPrice: '£478'
   }
 ];
 
