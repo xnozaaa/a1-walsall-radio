@@ -1,6 +1,6 @@
 import HeaderNavigation from '@/components/sections/header-navigation';
 import A1Footer from '@/components/sections/a1-footer';
-import { School, Building2, Users, Tablet, Accessibility, Plane, Car, Phone, Mail } from 'lucide-react';
+import { School, Building2, Users, Tablet, Accessibility, Plane, Phone, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
 
@@ -81,19 +81,6 @@ const services = [
       'Flight tracking service',
       'Meet & greet option',
       'Luggage assistance included'
-    ]
-  },
-  {
-    icon: Car,
-    title: 'Local & Long-Distance Taxi Service',
-    description: 'From local shopping trips to long-distance UK travel, we\'re here whenever you need us.',
-    benefits: [
-      'Local and long-distance travel',
-      'Competitive pricing',
-      'Clean, modern vehicles',
-      '24/7 service',
-      'Professional drivers',
-      'Advance booking available'
     ]
   }
 ];
