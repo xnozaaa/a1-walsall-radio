@@ -21,7 +21,7 @@ const HeaderNavigation = () => {
             {/* Logo */}
             <Link href="/" className="flex items-center">
               <Image
-                src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Artboard-3-1763337684939.png"
+                src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Artboard-4-1763338055941.png?width=8000&height=8000&resize=contain"
                 alt="A1 Walsall Radio Taxis Ltd"
                 width={320}
                 height={90}
