@@ -1,6 +1,6 @@
 'use client';
 
-import { School, Accessibility, Plane, Building2, Tablet, Car, Users } from 'lucide-react';
+import { School, Accessibility, Plane, Building2, Tablet, Users } from 'lucide-react';
 import Link from 'next/link';
 
 const services = [
@@ -38,12 +38,6 @@ const services = [
     icon: Plane,
     title: 'Airport Transfers',
     description: 'Dependable 24/7 transfers to all major UK airports with fixed, transparent pricing.',
-    color: 'text-primary'
-  },
-  {
-    icon: Car,
-    title: 'Local & Long-Distance Taxi Service',
-    description: 'From local shopping trips to long-distance UK travel, we\'re here whenever you need us.',
     color: 'text-primary'
   }
 ];
