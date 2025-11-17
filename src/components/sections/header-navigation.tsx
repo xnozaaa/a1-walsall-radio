@@ -20,22 +20,12 @@ const HeaderNavigation = () => {
           <div className="flex items-center justify-between h-16 md:h-[108px]">
             {/* Logo */}
             <Link href="/" className="flex items-center">
-              {/* Desktop/Tablet: Horizontal Logo */}
               <Image
-                src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Artboard-2-1763337009150.png"
-                alt="A1 Walsall Radio Taxis Ltd - Est. 1986"
-                width={280}
-                height={80}
-                className="hidden sm:block h-14 md:h-16 w-auto"
-                priority
-              />
-              {/* Mobile: Vertical Logo */}
-              <Image
-                src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Artboard-1-1763337009019.png"
-                alt="A1 Walsall Radio Taxis Ltd - Est. 1986"
-                width={120}
-                height={140}
-                className="block sm:hidden h-16 w-auto"
+                src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/Artboard-3-1763337684939.png"
+                alt="A1 Walsall Radio Taxis Ltd"
+                width={320}
+                height={90}
+                className="h-12 md:h-16 lg:h-20 w-auto"
                 priority
               />
             </Link>
