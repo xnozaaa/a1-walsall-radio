@@ -20,11 +20,11 @@ const BusinessAccountsSection = () => {
         <div className="flex items-center bg-black px-4 py-12 sm:px-8 md:px-12 md:py-20 lg:px-12 xl:px-20">
           <div>
             <h2 className="font-medium uppercase text-[40px] leading-tight tracking-[-0.02em] md:text-[48px]">
-              <span className="text-white">Business </span>
-              <span className="text-primary">Accounts</span>
+              <span className="text-white">Corporate </span>
+              <span className="text-primary">Transport</span>
             </h2>
             <p className="mt-6 text-body-lg text-muted-foreground">
-              Open an Addison Lee business account today and enjoy seamless corporate travel management with a range of benefits: fixed rates on London taxis and airport transfers, priority booking for meetings and events, plus dedicated account managers to support your travel needs, and more.
+              Set up a corporate transport account with A1 Walsall Radio Taxis Ltd and enjoy seamless business travel management. Benefit from reliable staff transport, competitive fixed rates, priority booking for meetings and events, plus dedicated support for all your corporate travel needs.
             </p>
             <a
               href="#"

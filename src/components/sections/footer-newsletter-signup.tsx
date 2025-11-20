@@ -9,47 +9,44 @@ const footerLinkColumns = [
   {
     title: "Company",
     links: [
-      { text: "Get a quote", href: "https://book.addisonlee.com/al/booking/new/car" },
-      { text: "Drive with us", href: "/become-an-addisonlee-driver" },
-      { text: "Careers", href: "/work-with-us" },
-      { text: "Blog", href: "/addlib" },
+      { text: "Get a quote", href: "#" },
+      { text: "Drive with us", href: "#" },
+      { text: "Careers", href: "#" },
+      { text: "Blog", href: "#" },
     ],
   },
   {
     title: "About",
     links: [
-      { text: "About us", href: "/services/about" },
+      { text: "About us", href: "/about" },
       { text: "Accreditations", href: "#" },
-      { text: "Sign Up", href: "https://book.addisonlee.com/al/sign-up" },
-      { text: "Download the App", href: "/apps" },
+      { text: "Sign Up", href: "#" },
+      { text: "Contact", href: "/contact" },
     ],
   },
   {
     title: "Support",
     links: [
-      { text: "Support", href: "/support" },
-      { text: "Contact us", href: "/support" },
-      { text: "FAQs", href: "/support/faqs" },
+      { text: "Support", href: "/contact" },
+      { text: "Contact us", href: "/contact" },
+      { text: "FAQs", href: "#" },
     ],
   },
   {
     title: "Services",
     links: [
-      { text: "Car Services", href: "/car-services" },
-      { text: "Courier Services", href: "/services/courier-services/" },
-      { text: "Airport Transfers", href: "/airport-transfers" },
-      { text: "Executive", href: "/services" },
-      { text: "Chauffeurs", href: "/services" },
+      { text: 'School Transport', href: '/services' },
+      { text: 'Corporate Travel', href: '/services' },
+      { text: 'Airport Transfers', href: '/services' },
+      { text: 'Wheelchair Accessible', href: '/services' },
     ],
   },
   {
     title: "Legal Terms",
     links: [
-      { text: "Terms & Conditions", href: "/terms-and-conditions" },
-      { text: "Privacy Policy", href: "/privacy-policy" },
-      { text: "Tax Strategy", href: "/tax-strategy" },
-      { text: "Modern Slavery", href: "/modern-slavery-statement" },
-      { text: "Cookie Policy", href: "/cookie-policy" },
+      { text: "Terms & Conditions", href: "#" },
+      { text: "Privacy Policy", href: "#" },
+      { text: "Cookie Policy", href: "#" },
     ],
   },
 ];
@@ -65,10 +62,10 @@ const paymentMethods = [
 ];
 
 const socialLinks = [
-  { Icon: Facebook, href: "https://www.facebook.com/AddisonLeeCarService/", name: "Facebook" },
-  { Icon: Twitter, href: "https://twitter.com/addisonleecabs", name: "Twitter" },
-  { Icon: Instagram, href: "https://www.instagram.com/addisonleecabs/", name: "Instagram" },
-  { Icon: Linkedin, href: "https://www.linkedin.com/company/addison-lee/", name: "LinkedIn" },
+  { Icon: Facebook, href: "#", name: "Facebook" },
+  { Icon: Twitter, href: "#", name: "Twitter" },
+  { Icon: Instagram, href: "#", name: "Instagram" },
+  { Icon: Linkedin, href: "#", name: "LinkedIn" },
 ];
 
 const FooterNewsletterSignup = () => {
@@ -152,7 +149,7 @@ const FooterNewsletterSignup = () => {
             
             <div className="flex flex-col-reverse items-center justify-between gap-y-8 text-center md:flex-row md:text-left">
                 <p className="text-sm text-muted-foreground">
-                    © 2025 Addison Lee Limited. All rights reserved.
+                    © 2025 A1 Walsall Radio Taxis Ltd. All rights reserved.
                 </p>
                 <div className="flex items-center gap-x-6">
                     {socialLinks.map((social) => (
