@@ -98,20 +98,20 @@ const A1Footer = () => {
             <ul className="space-y-4">
               <li>
                 <a
-                  href="tel:01922123456"
+                  href="tel:01922644577"
                   className="flex items-start gap-3 text-white/70 hover:text-primary transition-colors group"
                 >
                   <Phone className="h-5 w-5 flex-shrink-0 mt-0.5 group-hover:text-primary" />
-                  <span>01922 123 456</span>
+                  <span>01922 644577</span>
                 </a>
               </li>
               <li>
                 <a
-                  href="mailto:info@a1walsall.co.uk"
+                  href="mailto:walsallradiocars@hotmail.co.uk"
                   className="flex items-start gap-3 text-white/70 hover:text-primary transition-colors group"
                 >
                   <Mail className="h-5 w-5 flex-shrink-0 mt-0.5 group-hover:text-primary" />
-                  <span>info@a1walsall.co.uk</span>
+                  <span>walsallradiocars@hotmail.co.uk</span>
                 </a>
               </li>
               <li className="flex items-start gap-3 text-white/70">
