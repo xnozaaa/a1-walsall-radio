@@ -49,14 +49,14 @@ const A1HeaderNavigation = () => {
             {/* Desktop CTAs */}
             <div className="hidden lg:flex items-center space-x-4">
               <a
-                href="tel:01922123456"
+                href="tel:01922644577"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white font-semibold text-sm rounded-lg hover:bg-[#D68A1F] transition-colors"
               >
                 <Phone className="h-4 w-4" />
                 Call Us
               </a>
               <a
-                href="mailto:info@a1walsalltaxis.co.uk"
+                href="mailto:walsallradiocars@hotmail.co.uk"
                 className="inline-flex items-center gap-2 px-6 py-3 border-2 border-primary text-primary font-semibold text-sm rounded-lg hover:bg-primary hover:text-white transition-colors"
               >
                 <Mail className="h-4 w-4" />
@@ -101,14 +101,14 @@ const A1HeaderNavigation = () => {
               ))}
               <div className="pt-4 space-y-3">
                 <a
-                  href="tel:01922123456"
+                  href="tel:01922644577"
                   className="flex items-center justify-center gap-2 w-full px-6 py-3 bg-primary text-white font-semibold text-sm rounded-lg"
                 >
                   <Phone className="h-4 w-4" />
                   Call Us
                 </a>
                 <a
-                  href="mailto:info@a1walsalltaxis.co.uk"
+                  href="mailto:walsallradiocars@hotmail.co.uk"
                   className="flex items-center justify-center gap-2 w-full px-6 py-3 border-2 border-primary text-primary font-semibold text-sm rounded-lg"
                 >
                   <Mail className="h-4 w-4" />
