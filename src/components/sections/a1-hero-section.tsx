@@ -50,14 +50,14 @@ export const A1HeroSection = () => {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <a
-                href="tel:01922123456"
+                href="tel:01922644577"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-[#F2A93B] text-white font-semibold text-base rounded-lg hover:bg-[#D68A1F] transition-colors shadow-lg"
               >
                 <Phone className="h-5 w-5" />
                 Call Us Now
               </a>
               <a
-                href="mailto:info@a1walsalltaxis.co.uk"
+                href="mailto:walsallradiocars@hotmail.co.uk"
                 className="inline-flex items-center justify-center gap-2 px-8 py-4 border-2 border-[#F2A93B] text-[#F2A93B] font-semibold text-base rounded-lg hover:bg-[#F2A93B] hover:text-white transition-colors"
               >
                 <Mail className="h-5 w-5" />

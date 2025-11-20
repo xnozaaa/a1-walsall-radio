@@ -38,14 +38,14 @@ export default function ContactPage() {
                   <p className="text-muted-foreground mb-6 leading-relaxed">
                     Speak to our friendly team for immediate assistance, bookings, or quotes.
                   </p>
-                  <a href="tel:01922123456" className="text-3xl font-bold text-primary hover:text-[#D68A1F] transition-colors block mb-4">
-                    01922 123 456
+                  <a href="tel:01922644577" className="text-3xl font-bold text-primary hover:text-[#D68A1F] transition-colors block mb-4">
+                    01922 644577
                   </a>
                   <p className="text-sm text-muted-foreground">
                     Lines open 24/7 for bookings and emergencies
                   </p>
                   <Button className="mt-6 bg-primary hover:bg-[#D68A1F] text-white w-full" asChild>
-                    <a href="tel:01922123456" className="flex items-center justify-center gap-2">
+                    <a href="tel:01922644577" className="flex items-center justify-center gap-2">
                       <Phone className="h-5 w-5" />
                       CALL NOW
                     </a>
@@ -61,14 +61,14 @@ export default function ContactPage() {
                   <p className="text-muted-foreground mb-6 leading-relaxed">
                     Send us an email for quotes, contract inquiries, or general questions.
                   </p>
-                  <a href="mailto:info@a1walsall.co.uk" className="text-2xl font-bold text-primary hover:text-[#D68A1F] transition-colors block mb-4 break-all">
-                    info@a1walsall.co.uk
+                  <a href="mailto:walsallradiocars@hotmail.co.uk" className="text-2xl font-bold text-primary hover:text-[#D68A1F] transition-colors block mb-4 break-all">
+                    walsallradiocars@hotmail.co.uk
                   </a>
                   <p className="text-sm text-muted-foreground">
                     We aim to respond within 2 hours during business hours
                   </p>
                   <Button className="mt-6 bg-primary hover:bg-[#D68A1F] text-white w-full" asChild>
-                    <a href="mailto:info@a1walsall.co.uk" className="flex items-center justify-center gap-2">
+                    <a href="mailto:walsallradiocars@hotmail.co.uk" className="flex items-center justify-center gap-2">
                       <Mail className="h-5 w-5" />
                       SEND EMAIL
                     </a>
@@ -158,8 +158,8 @@ export default function ContactPage() {
                   <Phone className="h-10 w-10 text-primary mx-auto mb-4" />
                   <h3 className="text-white font-bold mb-2">Call</h3>
                   <p className="text-white/70 text-sm mb-3">For immediate bookings</p>
-                  <a href="tel:01922123456" className="text-primary hover:text-accent transition-colors font-semibold">
-                    01922 123 456
+                  <a href="tel:01922644577" className="text-primary hover:text-accent transition-colors font-semibold">
+                    01922 644577
                   </a>
                 </div>
 
@@ -167,8 +167,8 @@ export default function ContactPage() {
                   <Mail className="h-10 w-10 text-primary mx-auto mb-4" />
                   <h3 className="text-white font-bold mb-2">Email</h3>
                   <p className="text-white/70 text-sm mb-3">For quotes & inquiries</p>
-                  <a href="mailto:info@a1walsall.co.uk" className="text-primary hover:text-accent transition-colors font-semibold text-sm break-all">
-                    info@a1walsall.co.uk
+                  <a href="mailto:walsallradiocars@hotmail.co.uk" className="text-primary hover:text-accent transition-colors font-semibold text-sm break-all">
+                    walsallradiocars@hotmail.co.uk
                   </a>
                 </div>
 
