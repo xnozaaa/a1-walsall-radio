@@ -10,7 +10,7 @@ const AirportTransferSection = () => {
         <div className="relative h-[50vh] min-h-[400px] lg:h-auto lg:w-[60%] lg:order-2">
           <Image
             src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/321dc789-f6df-4a18-a342-76c745235fcf-addisonlee-com/assets/images/airport-transfer-9.jpg"
-            alt="Couple with luggage and an Addison Lee car on a London street"
+            alt="Couple with luggage and a taxi on a Walsall street"
             fill
             sizes="(max-width: 1023px) 100vw, 60vw"
             className="object-cover"
@@ -26,10 +26,7 @@ const AirportTransferSection = () => {
               <span className="text-primary">airport transfer</span>
             </h2>
             <p className="text-lg leading-[1.5] text-muted-foreground mb-10">
-              Need a Heathrow airport transfer, or a taxi from London to
-              Gatwick, Stansted, or Luton Airport? Choose our Airport Assured
-              Service with fixed pricing, flight tracking, and a 100% on-time
-              guarantee, or your next journey is free.
+              Need an airport transfer to Birmingham Airport? We offer reliable, professional transport services with experienced drivers, comfortable vehicles, and competitive fixed pricing for a stress-free journey.
             </p>
             <Link
               href="#"

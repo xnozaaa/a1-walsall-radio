@@ -30,10 +30,10 @@ const footerLinkData = [
   {
     title: 'Services',
     links: [
-      { name: 'Car Services', href: '#' },
-      { name: 'Courier Services', href: '#' },
+      { name: 'School Transport', href: '#' },
+      { name: 'Corporate Travel', href: '#' },
       { name: 'Airport Transfers', href: '#' },
-      { name: 'Executive Chauffeurs', href: '#' },
+      { name: 'Wheelchair Accessible', href: '#' },
     ],
   },
   {
@@ -41,8 +41,6 @@ const footerLinkData = [
     links: [
       { name: 'Terms & Conditions', href: '#' },
       { name: 'Privacy Policy', href: '#' },
-      { name: 'Tax Strategy', href: '#' },
-      { name: 'Modern Slavery', href: '#' },
       { name: 'Cookie Policy', href: '#' },
     ],
   },
@@ -75,7 +73,7 @@ const FooterNavigation = () => {
         </div>
         <div className="mt-16 border-t border-white/20 pt-8 text-center">
           <p className="text-xs text-[#B3B3B3]">
-            © 2025 Addison Lee Limited. All rights reserved.
+            © 2025 A1 Walsall Radio Taxis Ltd. All rights reserved.
           </p>
         </div>
       </div>
