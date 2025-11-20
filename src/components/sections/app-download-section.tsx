@@ -51,7 +51,7 @@ const AppDownloadSection = () => {
               Experience reliable transport at your fingertips. Contact us to book airport transfers, school transport, corporate journeys or everyday trips: fast, reliable, and hassle‑free.
             </p>
             <a
-              href="tel:01922123456"
+              href="tel:01922644577"
               className="inline-flex items-center justify-center gap-3 bg-primary text-primary-foreground px-8 py-4 text-sm font-medium uppercase tracking-[1.4px] hover:opacity-60 transition-opacity"
             >
               <span>Call Now</span>
