@@ -35,7 +35,7 @@ const AppDownloadSection = () => {
           <div className="md:col-span-4">
             <Image
               src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/321dc789-f6df-4a18-a342-76c745235fcf-addisonlee-com/assets/images/download-app-15.jpg"
-              alt="Addison Lee app shown on a smartphone"
+              alt="Booking app shown on a smartphone"
               width={500}
               height={700}
               className="w-full h-auto mx-auto max-w-sm md:max-w-full"
@@ -43,18 +43,18 @@ const AppDownloadSection = () => {
           </div>
           <div className="md:col-span-6">
             <h2 className="text-[2.5rem] md:text-[3rem] lg:text-[3.5rem] font-medium uppercase tracking-tight leading-[1.1] mb-6">
-              <span className="text-foreground">DOWNLOAD </span>
+              <span className="text-foreground">CONTACT US </span>
               <br className="md:hidden" />
-              <span className="text-primary">OUR APP</span>
+              <span className="text-primary">TODAY</span>
             </h2>
             <p className="text-body-lg text-muted-foreground mb-8 max-w-xl">
-              Experience premium travel at your fingertips. With the Addison Lee app, you can book airport transfers, business trips, London taxis or everyday journeys in just a few taps: fast, reliable, and hassle‑free.
+              Experience reliable transport at your fingertips. Contact us to book airport transfers, school transport, corporate journeys or everyday trips: fast, reliable, and hassle‑free.
             </p>
             <a
-              href="#"
+              href="tel:01922123456"
               className="inline-flex items-center justify-center gap-3 bg-primary text-primary-foreground px-8 py-4 text-sm font-medium uppercase tracking-[1.4px] hover:opacity-60 transition-opacity"
             >
-              <span>Download</span>
+              <span>Call Now</span>
               <ArrowRightIcon className="w-4 h-3" />
             </a>
           </div>

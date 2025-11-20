@@ -10,7 +10,7 @@ const HeroVideoSection = () => {
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/80 z-10" />
         <img
-          src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/321dc789-f6df-4a18-a342-76c745235fcf-addisonlee-com/assets/images/1920x1080_15-Addison-Lee-multivan-in-London-11.jpg"
+          src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/project-uploads/321dc789-f6df-4a18-a342-76c745235fcf/generated_images/modern-black-taxi-vehicle-on-a-professio-b0cc994f-20251120154901.jpg"
           alt="A1 Walsall Radio Taxis"
           className="w-full h-full object-cover"
         />

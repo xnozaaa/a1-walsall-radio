@@ -6,17 +6,17 @@ import React from 'react';
 const features = [
   {
     title: "Award Winning",
-    description: "From achievements in sustainability to best chauffeur/taxi service.",
+    description: "Recognized for excellence in customer service and reliable transportation.",
     image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/321dc789-f6df-4a18-a342-76c745235fcf-addisonlee-com/assets/images/500x700_03-Addison-Lee-iD4-electric-Car-with-woman-12.jpg",
   },
   {
-    title: "Executive Service",
-    description: "The stylish, safe and reliable way to travel.",
+    title: "Professional Service",
+    description: "The stylish, safe and reliable way to travel across Walsall.",
     image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/321dc789-f6df-4a18-a342-76c745235fcf-addisonlee-com/assets/images/500x700_09-Addison-Lee-executive-car-with-man-and--13.jpg",
   },
   {
     title: "Quality Assured",
-    description: "Experienced, and fully vetted drivers, premium vehicles fully owned, maintained and insured by Addison Lee.",
+    description: "Experienced, DBS-checked drivers with well-maintained vehicles fully insured.",
     image: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/321dc789-f6df-4a18-a342-76c745235fcf-addisonlee-com/assets/images/500x700_14-Addison-Lee-Car-multivan-in-London-City-14.jpg",
   },
 ];
@@ -40,7 +40,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ title, description, image }) 
       />
     </div>
     <h5 className="text-2xl font-bold uppercase mb-4">
-      {title === "Executive Service" ? <>Executive<br />Service</> : title}
+      {title === "Professional Service" ? <>Professional<br />Service</> : title}
     </h5>
     <p className="text-base text-[#B3B3B3]">
       {description}
