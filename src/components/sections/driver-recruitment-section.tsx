@@ -6,7 +6,7 @@ const DriverRecruitmentSection = () => {
       {/* Background Image */}
       <Image
         src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/321dc789-f6df-4a18-a342-76c745235fcf-addisonlee-com/assets/images/1920x1080_15-Addison-Lee-multivan-in-London-11.jpg"
-        alt="Addison Lee VW Multivan on an urban street with modern architecture in the background"
+        alt="Modern vehicle on an urban street with modern architecture in the background"
         layout="fill"
         objectFit="cover"
         quality={100}
@@ -21,12 +21,10 @@ const DriverRecruitmentSection = () => {
           <h2 className="text-[36px] font-medium uppercase leading-[1.2] -tracking-[0.02em] md:text-[56px] md:leading-[1.1]">
             <span className="text-white">Drive with</span>
             <br className="md:hidden" />{' '}
-            <span className="text-primary">Addison Lee</span>
+            <span className="text-primary">A1 Walsall</span>
           </h2>
           <p className="mt-6 text-body-lg text-white">
-            Join the UK’s largest premium passenger car and courier services
-            company and start earning today, driving executive cars, minicabs, or
-            couriers.
+            Join Walsall's trusted local transport company and start earning today. We're looking for professional, reliable drivers with excellent customer service skills to join our team.
           </p>
           <a
             href="#"
