@@ -60,7 +60,7 @@ const HeaderNavigation = () => {
                 className="border-white text-white hover:bg-white hover:text-charcoal"
                 asChild>
 
-                <a href="tel:01922123456" className="flex items-center gap-2">
+                <a href="tel:01922644577" className="flex items-center gap-2">
                   <Phone className="h-4 w-4" />
                   CALL
                 </a>
@@ -70,7 +70,7 @@ const HeaderNavigation = () => {
                 className="bg-primary hover:bg-[#D68A1F] text-white"
                 asChild>
 
-                <a href="mailto:info@a1walsall.co.uk" className="flex items-center gap-2">
+                <a href="mailto:walsallradiocars@hotmail.co.uk" className="flex items-center gap-2">
                   <Mail className="h-4 w-4" />
                   EMAIL
                 </a>
@@ -144,7 +144,7 @@ const HeaderNavigation = () => {
                 className="bg-primary hover:bg-[#D68A1F] text-white font-semibold w-full"
                 asChild>
 
-                  <a href="tel:01922123456" className="flex items-center justify-center gap-2">
+                  <a href="tel:01922644577" className="flex items-center justify-center gap-2">
                     <Phone className="h-5 w-5" />
                     CALL US NOW
                   </a>
@@ -155,7 +155,7 @@ const HeaderNavigation = () => {
                 className="border-2 border-white text-white hover:bg-white hover:text-charcoal font-semibold w-full"
                 asChild>
 
-                  <a href="mailto:info@a1walsall.co.uk" className="flex items-center justify-center gap-2">
+                  <a href="mailto:walsallradiocars@hotmail.co.uk" className="flex items-center justify-center gap-2">
                     <Mail className="h-5 w-5" />
                     EMAIL US
                   </a>
