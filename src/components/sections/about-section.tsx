@@ -10,20 +10,20 @@ const AboutSection = () => {
           <div className="flex flex-col justify-center">
             <h2 className="text-5xl font-medium uppercase mb-8 -tracking-[0.02em] leading-[1.1]">
               <span>About </span>
-              <span className="text-primary">Addison Lee</span>
+              <span className="text-primary">A1 Walsall</span>
             </h2>
             <div className="space-y-6 text-muted-foreground text-base leading-[1.6]">
               <p>
-                Addison Lee is London’s leading private hire and premium transport provider, trusted for reliable courier services, airport transfers, executive cars and luxury chauffeur services.
+                A1 Walsall Radio Taxis Ltd is Walsall's trusted private hire and transport provider, delivering reliable services for schools, businesses and local passengers.
               </p>
               <p>
-                With over 50 years’ experience, we offer seamless London travel for business and personal needs. From same-day couriers to airport taxis serving Heathrow, Gatwick, Stansted, Luton and London City, we guarantee on-time, stress-free journeys.
+                With over 40 years' experience since 1986, we offer seamless transportation for all your needs. From daily home-to-school runs to wheelchair-accessible vehicles, corporate staff transport and airport transfers to Birmingham and beyond.
               </p>
               <p>
-                Our fleet of executive cars, chauffeur-driven vehicles and black taxis deliver comfort and style across the capital. Corporate clients benefit from Addison Lee business accounts with centralised booking, expense tracking and priority service.
+                Our fleet of well-maintained vehicles and DBS-checked, safeguarding-trained drivers deliver comfort, safety and punctuality across Walsall and the West Midlands. Schools and corporate clients benefit from dedicated contracts with reliable scheduling and priority service.
               </p>
               <p>
-                For London airport transfers and private hire cars, choose Addison Lee for reliability, comfort and exceptional service.
+                For professional transport services in Walsall, choose A1 Walsall Radio Taxis Ltd for reliability, safety and exceptional local service.
               </p>
             </div>
           </div>
@@ -32,7 +32,7 @@ const AboutSection = () => {
           <div className="w-full h-full flex items-center md:order-first">
             <Image
               src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/321dc789-f6df-4a18-a342-76c745235fcf-addisonlee-com/assets/images/about-AL-16.jpg"
-              alt="View from inside an Addison Lee vehicle, looking at another branded van through the windshield"
+              alt="View from inside an A1 Walsall vehicle"
               width={1200}
               height={1200}
               className="w-full h-auto object-cover"
