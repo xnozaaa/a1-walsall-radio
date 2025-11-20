@@ -65,7 +65,7 @@ const HeroVideoSection = () => {
               className="bg-primary hover:bg-[#D68A1F] text-white font-semibold text-base px-8 py-6 min-w-[200px]"
               asChild
             >
-              <a href="tel:01922123456" className="flex items-center gap-2">
+              <a href="tel:01922644577" className="flex items-center gap-2">
                 <Phone className="h-5 w-5" />
                 CALL US NOW
               </a>
@@ -76,7 +76,7 @@ const HeroVideoSection = () => {
               className="border-2 border-white text-white hover:bg-white hover:text-charcoal font-semibold text-base px-8 py-6 min-w-[200px]"
               asChild
             >
-              <a href="mailto:info@a1walsall.co.uk" className="flex items-center gap-2">
+              <a href="mailto:walsallradiocars@hotmail.co.uk" className="flex items-center gap-2">
                 <Mail className="h-5 w-5" />
                 EMAIL US
               </a>
