@@ -126,7 +126,7 @@ export default function ServicesPage() {
                       </p>
                       <div className="flex flex-col sm:flex-row gap-3">
                         <Button className="bg-primary hover:bg-[#D68A1F] text-white" asChild>
-                          <a href="tel:01922123456" className="flex items-center gap-2">
+                          <a href="tel:01922644577" className="flex items-center gap-2">
                             <Phone className="h-4 w-4" />
                             Call to Book
                           </a>
@@ -174,7 +174,7 @@ export default function ServicesPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button size="lg" className="bg-primary hover:bg-[#D68A1F] text-white font-semibold" asChild>
-                  <a href="tel:01922123456" className="flex items-center gap-2">
+                  <a href="tel:01922644577" className="flex items-center gap-2">
                     <Phone className="h-5 w-5" />
                     CALL US NOW
                   </a>
