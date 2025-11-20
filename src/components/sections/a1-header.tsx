@@ -59,14 +59,14 @@ export const A1Header = () => {
           {/* Desktop CTA Buttons */}
           <div className="hidden md:flex items-center gap-4">
             <a
-              href="tel:01922123456"
+              href="tel:01922644577"
               className="inline-flex items-center gap-2 px-6 py-3 bg-[#F2A93B] text-white font-semibold rounded-lg hover:bg-[#D68A1F] transition-colors"
             >
               <Phone className="h-4 w-4" />
               <span className="hidden lg:inline">Call Us</span>
             </a>
             <a
-              href="mailto:info@a1walsalltaxis.co.uk"
+              href="mailto:walsallradiocars@hotmail.co.uk"
               className="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#F2A93B] text-[#F2A93B] font-semibold rounded-lg hover:bg-[#F2A93B] hover:text-white transition-colors"
             >
               <Mail className="h-4 w-4" />
@@ -101,14 +101,14 @@ export const A1Header = () => {
             ))}
             <div className="pt-4 space-y-3 border-t border-[#DDDDDD]/20">
               <a
-                href="tel:01922123456"
+                href="tel:01922644577"
                 className="flex items-center justify-center gap-2 w-full px-6 py-3 bg-[#F2A93B] text-white font-semibold rounded-lg"
               >
                 <Phone className="h-4 w-4" />
                 Call Us
               </a>
               <a
-                href="mailto:info@a1walsalltaxis.co.uk"
+                href="mailto:walsallradiocars@hotmail.co.uk"
                 className="flex items-center justify-center gap-2 w-full px-6 py-3 border-2 border-[#F2A93B] text-[#F2A93B] font-semibold rounded-lg"
               >
                 <Mail className="h-4 w-4" />
