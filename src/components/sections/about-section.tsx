@@ -17,7 +17,7 @@ const AboutSection = () => {
                 A1 Walsall Radio Taxis Ltd is Walsall's trusted private hire and transport provider, delivering reliable services for schools, businesses and local passengers.
               </p>
               <p>
-                With over 40 years' experience since 1986, we offer seamless transportation for all your needs. From daily home-to-school runs to wheelchair-accessible vehicles, corporate staff transport and airport transfers to Birmingham and beyond.
+                With nearly 40 years' experience since 1986, we offer seamless transportation for all your needs. From daily home-to-school runs to wheelchair-accessible vehicles, corporate staff transport and airport transfers to Birmingham and beyond.
               </p>
               <p>
                 Our fleet of well-maintained vehicles and DBS-checked, safeguarding-trained drivers deliver comfort, safety and punctuality across Walsall and the West Midlands. Schools and corporate clients benefit from dedicated contracts with reliable scheduling and priority service.
