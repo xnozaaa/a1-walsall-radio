@@ -12,14 +12,14 @@ export const A1HeroSection = () => {
           <div className="space-y-6 lg:space-y-8">
             <div className="inline-block px-4 py-2 bg-[#F2A93B]/10 rounded-full border border-[#F2A93B]/20">
               <p className="text-sm font-semibold text-[#D68A1F]">
-                Est. 1988 • 40+ Years of Trusted Service
+                Est. 1986 • Nearly 40 Years of Trusted Service
               </p>
             </div>
             
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
               Reliable Transport for{' '}
               <span className="text-[#F2A93B]">Schools, Businesses & Local Passengers</span>{' '}
-              Since 1988
+              Since 1986
             </h1>
             
             <p className="text-lg md:text-xl text-[#555555] leading-relaxed font-medium">
@@ -68,7 +68,7 @@ export const A1HeroSection = () => {
             {/* Trust Badges */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-8 border-t border-[#DDDDDD]">
               <div className="text-center">
-                <p className="text-3xl md:text-4xl font-bold text-[#F2A93B]">40+</p>
+                <p className="text-3xl md:text-4xl font-bold text-[#F2A93B]">Nearly 40</p>
                 <p className="text-xs md:text-sm text-[#555555] mt-1">Years Experience</p>
               </div>
               <div className="text-center">
