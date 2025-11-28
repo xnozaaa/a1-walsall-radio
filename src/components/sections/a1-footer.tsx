@@ -15,7 +15,7 @@ const A1Footer = () => {
               <span className="text-white"> WALSALL</span>
             </div>
             <p className="text-white/70 mb-6 leading-relaxed">
-              Reliable transport for schools, businesses & local families since 1988. Serving Walsall and the West Midlands with professional, safe, and punctual service.
+              Reliable transport for schools, businesses & local families since 1986. Serving Walsall and the West Midlands with professional, safe, and punctual service.
             </p>
             <div className="flex gap-4">
               <a
