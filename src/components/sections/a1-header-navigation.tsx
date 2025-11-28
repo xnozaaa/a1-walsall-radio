@@ -12,7 +12,6 @@ const A1HeaderNavigation = () => {
     { name: 'Home', href: '/' },
     { name: 'About Us', href: '/about' },
     { name: 'Services', href: '/services' },
-    { name: 'Fleet', href: '/fleet' },
     { name: 'Business Contracts', href: '/business-contracts' },
     { name: 'Contact', href: '/contact' },
   ];
@@ -123,4 +122,4 @@ const A1HeaderNavigation = () => {
   );
 };
 
-export const A1HeaderNavigation = A1HeaderNavigation;
+export default A1HeaderNavigation;
