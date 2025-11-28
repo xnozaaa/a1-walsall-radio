@@ -88,7 +88,7 @@ const A1Footer = () => {
               </li>
               <li className="flex items-start gap-3 text-white/70">
                 <MapPin className="h-5 w-5 flex-shrink-0 mt-0.5" />
-                <span>Walsall, West Midlands<br />United Kingdom</span>
+                <span>165 Stafford St<br />Walsall WS2 8EA<br />West Midlands, United Kingdom</span>
               </li>
             </ul>
             <div className="mt-6">
