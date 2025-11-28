@@ -4,7 +4,7 @@ const featuresData = [
   {
     icon: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/321dc789-f6df-4a18-a342-76c745235fcf-addisonlee-com/assets/svgs/team-3.svg",
     title: "Trusted",
-    description: "With 40 years of exceptional service since 1986, A1 Walsall Radio Taxis Ltd is the trusted choice for passengers, schools and businesses seeking reliable local transportation.",
+    description: "With nearly 40 years of exceptional service since 1986, A1 Walsall Radio Taxis Ltd is the trusted choice for passengers, schools and businesses seeking reliable local transportation.",
     alt: "Team icon symbolizing trust",
   },
   {
