@@ -2,6 +2,7 @@
 
 import { Phone, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { BookingFormDialog } from '@/components/booking-form-dialog';
 
 const HeroVideoSection = () => {
   return (
@@ -70,17 +71,16 @@ const HeroVideoSection = () => {
                 CALL US NOW
               </a>
             </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-2 border-white text-white hover:bg-white hover:text-charcoal font-semibold text-base px-8 py-6 min-w-[200px]"
-              asChild
-            >
-              <a href="mailto:walsallradiocars@hotmail.co.uk" className="flex items-center gap-2">
+            <BookingFormDialog>
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-2 border-white text-white hover:bg-white hover:text-charcoal font-semibold text-base px-8 py-6 min-w-[200px] flex items-center gap-2"
+              >
                 <Mail className="h-5 w-5" />
-                EMAIL US
-              </a>
-            </Button>
+                BOOK ONLINE
+              </Button>
+            </BookingFormDialog>
           </div>
         </div>
       </div>
