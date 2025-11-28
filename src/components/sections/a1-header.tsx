@@ -12,7 +12,6 @@ export const A1Header = () => {
     { label: 'Home', href: '/' },
     { label: 'About Us', href: '/about' },
     { label: 'Services', href: '/services' },
-    { label: 'Fleet', href: '/fleet' },
     { label: 'Business Contracts', href: '/contracts' },
     { label: 'Contact', href: '/contact' },
   ];
