@@ -121,7 +121,8 @@ export default function ContactPage() {
                       <p className="font-semibold mb-2">Head Office:</p>
                       <p className="text-muted-foreground leading-relaxed">
                         A1 Walsall Radio Taxis Ltd<br />
-                        Walsall<br />
+                        165 Stafford St<br />
+                        Walsall WS2 8EA<br />
                         West Midlands<br />
                         United Kingdom
                       </p>
