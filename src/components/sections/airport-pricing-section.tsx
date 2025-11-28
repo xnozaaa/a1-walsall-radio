@@ -2,6 +2,7 @@
 
 import { Plane, ArrowRight, Clock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { BookingFormDialog } from '@/components/booking-form-dialog';
 
 const airportPrices = [
   {
@@ -182,17 +183,16 @@ export const AirportPricingSection = () => {
                 <ArrowRight className="h-5 w-5" />
               </a>
             </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-2 border-white text-white hover:bg-white hover:text-[#1A1A1A] font-semibold"
-              asChild
-            >
-              <a href="mailto:walsallradiocars@hotmail.co.uk" className="flex items-center gap-2">
-                Email For Quote
+            <BookingFormDialog defaultService="airport">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-2 border-white text-white hover:bg-white hover:text-[#1A1A1A] font-semibold flex items-center gap-2"
+              >
+                Book Online
                 <ArrowRight className="h-5 w-5" />
-              </a>
-            </Button>
+              </Button>
+            </BookingFormDialog>
           </div>
         </div>
       </div>

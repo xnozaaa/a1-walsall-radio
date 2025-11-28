@@ -5,6 +5,7 @@ import { Menu, X, Phone, Mail } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
+import { BookingFormDialog } from '@/components/booking-form-dialog';
 
 const HeaderNavigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -60,15 +61,15 @@ const HeaderNavigation = () => {
                   CALL
                 </a>
               </Button>
-              <Button
-                size="sm"
-                className="bg-primary hover:bg-[#D68A1F] text-white"
-                asChild>
-                <a href="mailto:walsallradiocars@hotmail.co.uk" className="flex items-center gap-2">
+              <BookingFormDialog>
+                <Button
+                  size="sm"
+                  className="bg-primary hover:bg-[#D68A1F] text-white flex items-center gap-2"
+                >
                   <Mail className="h-4 w-4" />
-                  EMAIL
-                </a>
-              </Button>
+                  BOOK
+                </Button>
+              </BookingFormDialog>
             </div>
 
             {/* Mobile Menu Button */}
@@ -129,16 +130,16 @@ const HeaderNavigation = () => {
                     CALL US NOW
                   </a>
                 </Button>
-                <Button
-                size="lg"
-                variant="outline"
-                className="border-2 border-white text-white hover:bg-white hover:text-charcoal font-semibold w-full"
-                asChild>
-                  <a href="mailto:walsallradiocars@hotmail.co.uk" className="flex items-center justify-center gap-2">
+                <BookingFormDialog>
+                  <Button
+                    size="lg"
+                    variant="outline"
+                    className="border-2 border-white text-white hover:bg-white hover:text-charcoal font-semibold w-full flex items-center justify-center gap-2"
+                  >
                     <Mail className="h-5 w-5" />
-                    EMAIL US
-                  </a>
-                </Button>
+                    BOOK ONLINE
+                  </Button>
+                </BookingFormDialog>
               </div>
             </nav>
           </div>
