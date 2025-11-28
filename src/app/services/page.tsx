@@ -3,12 +3,14 @@ import A1Footer from '@/components/sections/a1-footer';
 import { School, Building2, Users, Tablet, Accessibility, Plane, Phone, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
+import { BookingFormDialog } from '@/components/booking-form-dialog';
 
 const services = [
   {
     icon: School,
     title: 'Home-to-School Transport',
     description: 'Reliable daily pickups and drop-offs with safeguarding-trained drivers. Ideal for mainstream and SEN pupils.',
+    serviceId: 'school-transport',
     benefits: [
       'DBS-checked, safeguarding-trained drivers',
       'Punctual daily service',
@@ -22,6 +24,7 @@ const services = [
     icon: Building2,
     title: 'School Transport Contracts',
     description: 'Flexible, long-term solutions for councils and academies, managed with professionalism and consistency.',
+    serviceId: 'school-contracts',
     benefits: [
       'Long-term contract options',
       'Dedicated account management',
@@ -35,6 +38,7 @@ const services = [
     icon: Users,
     title: 'Corporate Travel & Workplace Transport',
     description: 'Daily staff shuttles and on-demand journeys for businesses, warehouses, hospitals and industrial parks.',
+    serviceId: 'corporate',
     benefits: [
       'Fixed-rate corporate accounts',
       'Priority booking for business clients',
@@ -48,6 +52,7 @@ const services = [
     icon: Tablet,
     title: 'On-Site Booking Tablets for Companies',
     description: 'We install dedicated booking tablets at your reception or staff entrance, allowing instant ride requests without phone calls.',
+    serviceId: 'booking-tablets',
     benefits: [
       'Dedicated booking tablets',
       'Instant ride requests',
@@ -61,6 +66,7 @@ const services = [
     icon: Accessibility,
     title: 'Wheelchair-Accessible Transport',
     description: 'Vehicles equipped with ramps/lifts and secure wheelchair anchoring. Drivers trained for mobility support.',
+    serviceId: 'wheelchair',
     benefits: [
       'Wheelchair ramps and lifts',
       'Secure wheelchair anchoring',
@@ -74,6 +80,7 @@ const services = [
     icon: Plane,
     title: 'Airport Transfers',
     description: 'Dependable 24/7 transfers to all major UK airports with fixed, transparent pricing.',
+    serviceId: 'airport',
     benefits: [
       'Fixed, transparent pricing',
       'All major UK airports covered',
@@ -131,12 +138,12 @@ export default function ServicesPage() {
                             Call to Book
                           </a>
                         </Button>
-                        <Button variant="outline" className="border-2" asChild>
-                          <Link href="/contact" className="flex items-center gap-2">
+                        <BookingFormDialog defaultService={service.serviceId}>
+                          <Button variant="outline" className="border-2 flex items-center gap-2">
                             <Mail className="h-4 w-4" />
-                            Email Us
-                          </Link>
-                        </Button>
+                            Book Online
+                          </Button>
+                        </BookingFormDialog>
                       </div>
                     </div>
                     <div className={isEven ? 'md:order-2' : 'md:order-1'}>
@@ -179,12 +186,12 @@ export default function ServicesPage() {
                     CALL US NOW
                   </a>
                 </Button>
-                <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-charcoal font-semibold" asChild>
-                  <Link href="/contact" className="flex items-center gap-2">
+                <BookingFormDialog>
+                  <Button size="lg" variant="outline" className="border-2 border-white text-white hover:bg-white hover:text-charcoal font-semibold flex items-center gap-2">
                     <Mail className="h-5 w-5" />
-                    EMAIL US
-                  </Link>
-                </Button>
+                    BOOK ONLINE
+                  </Button>
+                </BookingFormDialog>
               </div>
             </div>
           </div>
