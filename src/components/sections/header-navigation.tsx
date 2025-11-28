@@ -27,7 +27,6 @@ const HeaderNavigation = () => {
                 height={90}
                 className="h-12 md:h-16 lg:h-20 w-auto"
                 priority />
-
             </Link>
 
             {/* Desktop Navigation */}
@@ -40,9 +39,6 @@ const HeaderNavigation = () => {
               </Link>
               <Link href="/services" className="text-white hover:text-primary transition-colors font-medium">
                 Services
-              </Link>
-              <Link href="/fleet" className="text-white hover:text-primary transition-colors font-medium">
-                Fleet
               </Link>
               <Link href="/business" className="text-white hover:text-primary transition-colors font-medium">
                 Business Contracts
@@ -59,7 +55,6 @@ const HeaderNavigation = () => {
                 variant="outline"
                 className="border-white text-white hover:bg-white hover:text-charcoal"
                 asChild>
-
                 <a href="tel:01922644577" className="flex items-center gap-2">
                   <Phone className="h-4 w-4" />
                   CALL
@@ -69,7 +64,6 @@ const HeaderNavigation = () => {
                 size="sm"
                 className="bg-primary hover:bg-[#D68A1F] text-white"
                 asChild>
-
                 <a href="mailto:walsallradiocars@hotmail.co.uk" className="flex items-center gap-2">
                   <Mail className="h-4 w-4" />
                   EMAIL
@@ -82,7 +76,6 @@ const HeaderNavigation = () => {
               onClick={toggleMenu}
               className="md:hidden text-white p-2"
               aria-label="Toggle menu">
-
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
           </div>
@@ -99,42 +92,30 @@ const HeaderNavigation = () => {
               href="/"
               className="text-xl text-white hover:text-primary transition-colors font-semibold"
               onClick={toggleMenu}>
-
                 Home
               </Link>
               <Link
               href="/about"
               className="text-xl text-white hover:text-primary transition-colors font-semibold"
               onClick={toggleMenu}>
-
                 About Us
               </Link>
               <Link
               href="/services"
               className="text-xl text-white hover:text-primary transition-colors font-semibold"
               onClick={toggleMenu}>
-
                 Services
-              </Link>
-              <Link
-              href="/fleet"
-              className="text-xl text-white hover:text-primary transition-colors font-semibold"
-              onClick={toggleMenu}>
-
-                Fleet
               </Link>
               <Link
               href="/business"
               className="text-xl text-white hover:text-primary transition-colors font-semibold"
               onClick={toggleMenu}>
-
                 Business Contracts
               </Link>
               <Link
               href="/contact"
               className="text-xl text-white hover:text-primary transition-colors font-semibold"
               onClick={toggleMenu}>
-
                 Contact
               </Link>
 
@@ -143,7 +124,6 @@ const HeaderNavigation = () => {
                 size="lg"
                 className="bg-primary hover:bg-[#D68A1F] text-white font-semibold w-full"
                 asChild>
-
                   <a href="tel:01922644577" className="flex items-center justify-center gap-2">
                     <Phone className="h-5 w-5" />
                     CALL US NOW
@@ -154,7 +134,6 @@ const HeaderNavigation = () => {
                 variant="outline"
                 className="border-2 border-white text-white hover:bg-white hover:text-charcoal font-semibold w-full"
                 asChild>
-
                   <a href="mailto:walsallradiocars@hotmail.co.uk" className="flex items-center justify-center gap-2">
                     <Mail className="h-5 w-5" />
                     EMAIL US
@@ -166,7 +145,6 @@ const HeaderNavigation = () => {
         </div>
       }
     </>);
-
 };
 
 export default HeaderNavigation;
