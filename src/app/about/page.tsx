@@ -13,14 +13,14 @@ export default function AboutPage() {
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto text-center">
               <div className="inline-flex items-center gap-2 bg-primary/20 border border-primary/50 rounded-full px-4 py-2 mb-6">
-                <span className="text-primary font-semibold text-sm">ESTABLISHED 1988</span>
+                <span className="text-primary font-semibold text-sm">ESTABLISHED 1986</span>
               </div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
                 <span className="text-white">ABOUT </span>
                 <span className="text-primary">A1 WALSALL</span>
               </h1>
               <p className="text-xl text-white/90 leading-relaxed">
-                Over 40 years of trusted transport services for schools, businesses, and families across Walsall and the West Midlands
+                Nearly 40 years of trusted transport services for schools, businesses, and families across Walsall and the West Midlands
               </p>
             </div>
           </div>
@@ -38,10 +38,10 @@ export default function AboutPage() {
                   </h2>
                   <div className="space-y-4 text-muted-foreground leading-relaxed">
                     <p>
-                      Since 1988, A1 Walsall Radio Taxis Ltd has been providing reliable, professional transport services to the local community. What started as a family-run taxi service has grown into one of the most trusted transport providers in the West Midlands.
+                      Since 1986, A1 Walsall Radio Taxis Ltd has been providing reliable, professional transport services to the local community. What started as a family-run taxi service has grown into one of the most trusted transport providers in the West Midlands.
                     </p>
                     <p>
-                      Over four decades, we've built our reputation on punctuality, safety, and exceptional customer service. We understand that reliable transport is essential for schools, businesses, and families alike.
+                      Over nearly four decades, we've built our reputation on punctuality, safety, and exceptional customer service. We understand that reliable transport is essential for schools, businesses, and families alike.
                     </p>
                     <p>
                       Today, we operate a modern fleet of vehicles, including wheelchair-accessible transport, and employ a team of professional, DBS-checked, safeguarding-trained drivers who are committed to delivering the highest standards of service.
@@ -55,7 +55,7 @@ export default function AboutPage() {
                         <Clock className="h-6 w-6 text-white" />
                       </div>
                       <div>
-                        <h3 className="font-bold text-lg mb-1">40+ Years</h3>
+                        <h3 className="font-bold text-lg mb-1">Nearly 40 Years</h3>
                         <p className="text-muted-foreground">Of trusted service in the community</p>
                       </div>
                     </div>
