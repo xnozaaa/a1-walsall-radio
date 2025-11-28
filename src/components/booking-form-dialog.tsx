@@ -7,7 +7,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Textarea } from '@/components/ui/textarea';
-import { Calendar, Mail } from 'lucide-react';
+import { Calendar, Mail, AlertCircle } from 'lucide-react';
 
 interface BookingFormDialogProps {
   children: React.ReactNode;
@@ -18,22 +18,53 @@ export function BookingFormDialog({ children, defaultService }: BookingFormDialo
   const [open, setOpen] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setError(null);
     
-    // Simulate form submission
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    setIsSubmitting(false);
-    setSubmitted(true);
-    
-    // Reset after 3 seconds
-    setTimeout(() => {
-      setSubmitted(false);
-      setOpen(false);
-    }, 3000);
+    const formData = new FormData(e.currentTarget);
+    const data = {
+      name: formData.get('name'),
+      phone: formData.get('phone'),
+      email: formData.get('email'),
+      service: formData.get('service'),
+      pickup: formData.get('pickup'),
+      destination: formData.get('destination'),
+      date: formData.get('date'),
+      time: formData.get('time'),
+      passengers: formData.get('passengers'),
+      requirements: formData.get('requirements'),
+    };
+
+    try {
+      const response = await fetch('/api/send-booking', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send booking request');
+      }
+
+      setSubmitted(true);
+      
+      // Reset after 3 seconds
+      setTimeout(() => {
+        setSubmitted(false);
+        setOpen(false);
+      }, 3000);
+    } catch (err) {
+      setError('Failed to send booking request. Please try again or call us at 01922 644577.');
+      console.error('Booking submission error:', err);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -61,6 +92,13 @@ export function BookingFormDialog({ children, defaultService }: BookingFormDialo
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-4">
+            {error && (
+              <div className="bg-destructive/10 border border-destructive/20 rounded-md p-3 flex items-start gap-2">
+                <AlertCircle className="h-5 w-5 text-destructive flex-shrink-0 mt-0.5" />
+                <p className="text-sm text-destructive">{error}</p>
+              </div>
+            )}
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div className="space-y-2">
                 <Label htmlFor="name">Full Name *</Label>
