@@ -3,7 +3,6 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 
 const footerLinkColumns = [
   {
@@ -59,13 +58,6 @@ const paymentMethods = [
   { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/321dc789-f6df-4a18-a342-76c745235fcf-addisonlee-com/assets/svgs/ApplePay_logo-13.svg", alt: "Apple Pay" },
   { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/321dc789-f6df-4a18-a342-76c745235fcf-addisonlee-com/assets/svgs/BLUEAmerican_Express_logo-14.svg", alt: "American Express" },
   { src: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/test-clones/321dc789-f6df-4a18-a342-76c745235fcf-addisonlee-com/assets/svgs/amazonpay-15.svg", alt: "Amazon Pay" },
-];
-
-const socialLinks = [
-  { Icon: Facebook, href: "#", name: "Facebook" },
-  { Icon: Twitter, href: "#", name: "Twitter" },
-  { Icon: Instagram, href: "#", name: "Instagram" },
-  { Icon: Linkedin, href: "#", name: "LinkedIn" },
 ];
 
 const FooterNewsletterSignup = () => {
@@ -147,24 +139,10 @@ const FooterNewsletterSignup = () => {
                 ))}
             </div>
             
-            <div className="flex flex-col-reverse items-center justify-between gap-y-8 text-center md:flex-row md:text-left">
+            <div className="flex items-center justify-center text-center">
                 <p className="text-sm text-muted-foreground">
                     © 2025 A1 Walsall Radio Taxis Ltd. All rights reserved.
                 </p>
-                <div className="flex items-center gap-x-6">
-                    {socialLinks.map((social) => (
-                    <a
-                        key={social.name}
-                        href={social.href}
-                        aria-label={social.name}
-                        className="text-muted-foreground transition-colors hover:text-primary"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        <social.Icon className="h-6 w-6" />
-                    </a>
-                    ))}
-                </div>
             </div>
         </div>
       </div>
