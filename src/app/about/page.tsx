@@ -44,7 +44,7 @@ export default function AboutPage() {
                       Over nearly four decades, we've built our reputation on punctuality, safety, and exceptional customer service. We understand that reliable transport is essential for schools, businesses, and families alike.
                     </p>
                     <p>
-                      Today, we operate a modern fleet of vehicles, including wheelchair-accessible transport, and employ a team of professional, DBS-checked, safeguarding-trained drivers who are committed to delivering the highest standards of service.
+                      Today, we operate a modern selection of minibuses, including wheelchair-accessible transport, and employ a team of professional, DBS-checked, safeguarding-trained drivers who are committed to delivering the highest standards of service.
                     </p>
                   </div>
                 </div>
@@ -134,7 +134,7 @@ export default function AboutPage() {
                 </div>
                 <h3 className="text-xl font-bold text-white mb-3">Professionalism</h3>
                 <p className="text-white/70">
-                  Courteous, professional drivers and modern, clean vehicles.
+                  Courteous, professional drivers and modern, clean minibuses.
                 </p>
               </div>
             </div>

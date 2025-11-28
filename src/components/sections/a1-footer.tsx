@@ -39,11 +39,6 @@ const A1Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/fleet" className="text-white/70 hover:text-primary transition-colors">
-                  Fleet
-                </Link>
-              </li>
-              <li>
                 <Link href="/business" className="text-white/70 hover:text-primary transition-colors">
                   Business Contracts
                 </Link>

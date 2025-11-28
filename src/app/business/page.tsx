@@ -86,9 +86,9 @@ export default function BusinessPage() {
                 <div className="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-4">
                   <Users className="h-7 w-7 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-3">Flexible Fleet Options</h3>
+                <h3 className="text-xl font-bold mb-3">Minibus Options</h3>
                 <p className="text-muted-foreground">
-                  From saloon cars to minibuses. Wheelchair accessible vehicles available.
+                  Modern minibuses for group transport. Wheelchair accessible vehicles available.
                 </p>
               </div>
 
