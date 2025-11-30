@@ -5,7 +5,6 @@ import { AirportPricingSection } from '@/components/sections/airport-pricing-sec
 import TestimonialsSection from '@/components/sections/testimonials-section';
 import CoverageAreaSection from '@/components/sections/coverage-area-section';
 import A1Footer from '@/components/sections/a1-footer';
-import CookieConsentBanner from '@/components/sections/cookie-consent-banner';
 
 export default function Home() {
   return (
@@ -25,8 +24,6 @@ export default function Home() {
       </main>
       
       <A1Footer />
-      
-      <CookieConsentBanner />
     </div>
   );
 }
