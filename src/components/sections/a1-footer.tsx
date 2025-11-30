@@ -116,6 +116,16 @@ const A1Footer = () => {
               </Link>
             </div>
           </div>
+          <div className="mt-4 text-center">
+            <a 
+              href="https://www.instagram.com/designsbynly/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-white/50 hover:text-primary transition-colors text-sm"
+            >
+              Designs by NLY
+            </a>
+          </div>
         </div>
       </div>
     </footer>
