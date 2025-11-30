@@ -72,8 +72,8 @@ export const A1HeroSection = () => {
                 <p className="text-xs md:text-sm text-[#555555] mt-1">Years Experience</p>
               </div>
               <div className="text-center">
-                <p className="text-3xl md:text-4xl font-bold text-[#F2A93B]">24/7</p>
-                <p className="text-xs md:text-sm text-[#555555] mt-1">Available</p>
+                <p className="text-3xl md:text-4xl font-bold text-[#F2A93B]">24-hour</p>
+                <p className="text-xs md:text-sm text-[#555555] mt-1">Service</p>
               </div>
               <div className="text-center">
                 <p className="text-3xl md:text-4xl font-bold text-[#F2A93B]">100%</p>
