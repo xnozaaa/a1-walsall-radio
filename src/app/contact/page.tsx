@@ -2,6 +2,7 @@ import HeaderNavigation from '@/components/sections/header-navigation';
 import A1Footer from '@/components/sections/a1-footer';
 import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { BookingFormDialog } from '@/components/booking-form-dialog';
 
 export default function ContactPage() {
   return (
@@ -67,12 +68,12 @@ export default function ContactPage() {
                   <p className="text-sm text-muted-foreground">
                     We aim to respond within 2 hours during business hours
                   </p>
-                  <Button className="mt-6 bg-primary hover:bg-[#D68A1F] text-white w-full" asChild>
-                    <a href="mailto:walsallradiocars@hotmail.co.uk" className="flex items-center justify-center gap-2">
-                      <Mail className="h-5 w-5" />
+                  <BookingFormDialog>
+                    <Button className="mt-6 bg-primary hover:bg-[#D68A1F] text-white w-full">
+                      <Mail className="h-5 w-5 mr-2" />
                       SEND EMAIL
-                    </a>
-                  </Button>
+                    </Button>
+                  </BookingFormDialog>
                 </div>
               </div>
 
@@ -94,11 +95,11 @@ export default function ContactPage() {
                     </div>
                     <div className="flex justify-between items-center py-3 border-b border-border">
                       <span className="font-semibold">Office Hours</span>
-                      <span className="text-muted-foreground">Mon-Fri: 8am-6pm</span>
+                      <span className="text-primary font-bold">24/7</span>
                     </div>
                     <div className="flex justify-between items-center py-3 border-b border-border">
                       <span className="font-semibold">Weekend Office</span>
-                      <span className="text-muted-foreground">Sat: 9am-4pm</span>
+                      <span className="text-primary font-bold">24/7</span>
                     </div>
                     <div className="flex justify-between items-center py-3">
                       <span className="font-semibold">Emergency Service</span>
