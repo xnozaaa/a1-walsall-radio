@@ -30,34 +30,25 @@ export async function POST(request: NextRequest) {
 
     const serviceName = serviceNames[service] || service;
 
-    // Generate idempotency key to prevent duplicate sends
-    const idempotencyKey = `booking_${Date.now()}_${email}`;
-
     // Send email using Resend
-    const { data, error } = await resend.emails.send(
-      {
-        from: `${process.env.RESEND_FROM_NAME || 'A1 Walsall Radio Taxis'} <${process.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev'}>`,
-        to: 'walsallradiocars@hotmail.co.uk',
-        subject: `New Booking Request - ${serviceName}`,
-        react: BookingConfirmationEmail({
-          name,
-          phone,
-          email,
-          service,
-          serviceName,
-          pickup,
-          destination,
-          date,
-          time,
-          passengers,
-          requirements,
-        }),
-        tags: ['booking-request'],
-      },
-      {
-        idempotencyKey,
-      }
-    );
+    const { data, error } = await resend.emails.send({
+      from: `${process.env.RESEND_FROM_NAME || 'A1 Walsall Radio Taxis'} <${process.env.RESEND_FROM_EMAIL || 'onboarding@resend.dev'}>`,
+      to: 'walsallradiocars@hotmail.co.uk',
+      subject: `New Booking Request - ${serviceName}`,
+      react: BookingConfirmationEmail({
+        name,
+        phone,
+        email,
+        service,
+        serviceName,
+        pickup,
+        destination,
+        date,
+        time,
+        passengers,
+        requirements,
+      }),
+    });
 
     if (error) {
       console.error('Resend error:', error);
