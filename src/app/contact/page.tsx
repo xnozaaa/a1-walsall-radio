@@ -43,7 +43,7 @@ export default function ContactPage() {
                     01922 644577
                   </a>
                   <p className="text-sm text-muted-foreground">
-                    Lines open 24/7 for bookings and emergencies
+                    Lines open 24 hours for bookings and emergencies
                   </p>
                   <Button className="mt-6 bg-primary hover:bg-[#D68A1F] text-white w-full" asChild>
                     <a href="tel:01922644577" className="flex items-center justify-center gap-2">
@@ -91,19 +91,19 @@ export default function ContactPage() {
                   <div className="space-y-4">
                     <div className="flex justify-between items-center py-3 border-b border-border">
                       <span className="font-semibold">Bookings & Dispatch</span>
-                      <span className="text-primary font-bold">24/7</span>
+                      <span className="text-primary font-bold">24-hour service</span>
                     </div>
                     <div className="flex justify-between items-center py-3 border-b border-border">
                       <span className="font-semibold">Office Hours</span>
-                      <span className="text-primary font-bold">24/7</span>
+                      <span className="text-primary font-bold">24-hour service</span>
                     </div>
                     <div className="flex justify-between items-center py-3 border-b border-border">
                       <span className="font-semibold">Weekend Office</span>
-                      <span className="text-primary font-bold">24/7</span>
+                      <span className="text-primary font-bold">24-hour service</span>
                     </div>
                     <div className="flex justify-between items-center py-3">
                       <span className="font-semibold">Emergency Service</span>
-                      <span className="text-primary font-bold">24/7</span>
+                      <span className="text-primary font-bold">24-hour service</span>
                     </div>
                   </div>
                 </div>
@@ -178,7 +178,7 @@ export default function ContactPage() {
                   <Clock className="h-10 w-10 text-primary mx-auto mb-4" />
                   <h3 className="text-white font-bold mb-2">Available</h3>
                   <p className="text-white/70 text-sm mb-3">Round the clock service</p>
-                  <span className="text-primary font-semibold">24/7</span>
+                  <span className="text-primary font-semibold">24-hour service</span>
                 </div>
               </div>
             </div>
