@@ -11,15 +11,15 @@ export const metadata: Metadata = {
   authors: [{ name: "A1 Walsall Radio Taxis Ltd" }],
   icons: {
     icon: [
-      { url: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/favicon-16x16-1764545159397.png", sizes: "16x16", type: "image/png" },
-      { url: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/favicon-32x32-1764545159067.png", sizes: "32x32", type: "image/png" },
-      { url: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/document-uploads/favicon-1764545159387.ico", sizes: "any", type: "image/x-icon" },
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
     ],
     apple: [
-      { url: "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/render/image/public/document-uploads/apple-touch-icon-1764545159846.png", sizes: "180x180", type: "image/png" },
+      { url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" },
     ],
   },
-  manifest: "/manifest.json",
+  manifest: "/site.webmanifest",
   themeColor: "#F2A93B",
   viewport: "width=device-width, initial-scale=1, maximum-scale=5",
   openGraph: {
