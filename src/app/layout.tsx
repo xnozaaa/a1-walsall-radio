@@ -5,7 +5,7 @@ import ErrorReporter from "@/components/ErrorReporter";
 import Script from "next/script";
 
 export const metadata: Metadata = {
-  title: "A1 Walsall Radio Taxis Ltd",
+  title: "A1 Walsall Radio Taxis Ltd | 24/7 Taxi Service in Walsall",
   description: "Professional taxi service in Walsall. Airport transfers, corporate accounts, school transport, and more. Available 24/7. Call 01922 644577 to book.",
   keywords: "Walsall taxis, airport transfers, corporate taxi, school transport, 24/7 taxi service",
   authors: [{ name: "A1 Walsall Radio Taxis Ltd" }],
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_GB",
     url: "https://walsallradiocars.com",
-    title: "A1 Walsall Radio Taxis Ltd",
+    title: "A1 Walsall Radio Taxis Ltd | 24/7 Taxi Service in Walsall",
     description: "Professional taxi service in Walsall. Airport transfers, corporate accounts, and more. Available 24/7.",
     siteName: "A1 Walsall Radio Taxis Ltd",
   },
