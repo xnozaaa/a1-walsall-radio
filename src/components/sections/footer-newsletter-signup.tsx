@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -61,6 +61,47 @@ const paymentMethods = [
 ];
 
 const FooterNewsletterSignup = () => {
+  const [firstName, setFirstName] = useState("");
+  const [email, setEmail] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [message, setMessage] = useState("");
+  const [hasError, setHasError] = useState(false);
+
+  const handleNewsletterSubmit = async (
+    event: React.FormEvent<HTMLFormElement>
+  ) => {
+    event.preventDefault();
+    setIsSubmitting(true);
+    setMessage("");
+    setHasError(false);
+
+    try {
+      const response = await fetch("/api/newsletter-signup", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ firstName, email }),
+      });
+
+      const result = await response.json();
+      if (!response.ok) {
+        throw new Error(result.error || "Unable to sign up.");
+      }
+
+      setFirstName("");
+      setEmail("");
+      setMessage("Thank you. Your email has been registered.");
+    } catch (error) {
+      setHasError(true);
+      setMessage(
+        error instanceof Error
+          ? error.message
+          : "Unable to sign up. Please try again."
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   const renderLink = (link: { text: string; href: string }) => {
     const isExternal = link.href.startsWith("http");
     const commonClasses = "text-sm text-muted-foreground transition-colors hover:text-primary";
@@ -89,24 +130,45 @@ const FooterNewsletterSignup = () => {
               By providing us with your email address, we will keep you up to date
               with our latest news and offers.
             </p>
-            <form className="flex flex-col gap-4" onSubmit={(e) => { e.preventDefault(); }}>
+            <form className="flex flex-col gap-4" onSubmit={handleNewsletterSubmit}>
               <input
                 type="text"
+                name="firstName"
                 placeholder="First Name"
+                autoComplete="given-name"
+                required
+                value={firstName}
+                onChange={(event) => setFirstName(event.target.value)}
                 className="h-14 rounded-none border border-border bg-transparent px-4 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-0"
               />
               <input
                 type="email"
+                name="email"
                 placeholder="Email Address"
+                autoComplete="email"
+                required
+                value={email}
+                onChange={(event) => setEmail(event.target.value)}
                 className="h-14 rounded-none border border-border bg-transparent px-4 text-sm text-foreground placeholder:text-muted-foreground focus:border-primary focus:outline-none focus:ring-0"
               />
               <button
                 type="submit"
+                disabled={isSubmitting}
                 className="btn-text flex h-14 w-full items-center justify-center rounded-none border border-foreground bg-transparent transition-opacity hover:opacity-60"
               >
-                SIGN UP
+                {isSubmitting ? "SIGNING UP..." : "SIGN UP"}
               </button>
             </form>
+            {message && (
+              <p
+                className={`mt-3 text-sm ${
+                  hasError ? "text-red-600" : "text-green-700"
+                }`}
+                role={hasError ? "alert" : "status"}
+              >
+                {message}
+              </p>
+            )}
             <p className="mt-4 text-xs text-muted-foreground">
               *Your personal data will be collected and handled in accordance with our Privacy Policy.
               <br />
